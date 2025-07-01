@@ -27,7 +27,7 @@ class PlayerCharacterTest {
          PlayerCharacter pc = new  PlayerCharacter();
         // PlayerCharacter.intitial();
         int[] newPosition = pc.move("W");
-        assertArrayEquals(new int[]{0, 0}, newPosition, "Moving 'W' should increase Y by 1");
+        assertArrayEquals(new int[]{0, 1}, newPosition, "Moving 'W' should increase Y by 1");
     }
     @Test
     void testMoveWIncreasesXByOne() {
