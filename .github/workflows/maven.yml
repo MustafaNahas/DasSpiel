@@ -9,6 +9,12 @@
 name: Java CI with Maven
 
 on:
+  workflow_dispatch:            # ← manueller Start‑Knopf in GitHub
+    inputs:
+      run_tests:
+        description: "Tests ausführen?"
+        required: false
+        default: "true"
   push:
     branches: [ "master" ]
   pull_request:
