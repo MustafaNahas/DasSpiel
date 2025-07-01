@@ -15,7 +15,7 @@ public class PlayerCharacter {
         System.out.println("Steuere deine Figur mit W (hoch), A (links), S (runter), D (rechts). Tippe 'exit' zum Beenden.");
 
         while (true) {
-            System.out.print("Eingabe: ");
+            System.out.print("Eingabe:  ");
             String input = scanner.nextLine().toUpperCase();
 
             if (input.equals("EXIT")) {
